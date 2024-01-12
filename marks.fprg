@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CSLAB02-40"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-29 09:18:40 AM"/>
+        <attribute name="created" value="Q1NMQUIwMi00MDtDU0xBQjItNDA7MjAyMy0xMS0yOTswOTowMToyOCBBTTsyNDIx"/>
+        <attribute name="edited" value="Q1NMQUIwMi00MDtDU0xBQjItNDA7MjAyMy0xMS0yOTswOToxODo0MCBBTTsxOzI1MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sum" type="Integer" array="False" size=""/>
+            <declare name="marks" type="Integer" array="True" size="5"/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;enter the marks for the subject&quot;&amp;i" newline="True"/>
+                <input variable="marks[i]"/>
+                <assign variable="sum" expression="sum+marks[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="marks[i]" newline="True"/>
+            </for>
+            <assign variable="avg" expression="sum/5"/>
+            <output expression="&quot;sum is &quot;&amp;sum" newline="True"/>
+            <output expression="&quot;average ia &quot;&amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
